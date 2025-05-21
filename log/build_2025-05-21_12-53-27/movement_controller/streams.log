@@ -1,0 +1,22 @@
+[2.460s] Invoking command in '/home/frans/mega_ws/src/movement_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_controller build --build-base /home/frans/mega_ws/src/build/movement_controller/build install --record /home/frans/mega_ws/src/build/movement_controller/install.log --single-version-externally-managed install_data
+[2.906s] running egg_info
+[2.940s] writing ../build/movement_controller/movement_controller.egg-info/PKG-INFO
+[2.941s] writing dependency_links to ../build/movement_controller/movement_controller.egg-info/dependency_links.txt
+[2.941s] writing entry points to ../build/movement_controller/movement_controller.egg-info/entry_points.txt
+[2.941s] writing requirements to ../build/movement_controller/movement_controller.egg-info/requires.txt
+[2.941s] writing top-level names to ../build/movement_controller/movement_controller.egg-info/top_level.txt
+[3.012s] reading manifest file '../build/movement_controller/movement_controller.egg-info/SOURCES.txt'
+[3.013s] adding license file 'LICENSE'
+[3.013s] writing manifest file '../build/movement_controller/movement_controller.egg-info/SOURCES.txt'
+[3.014s] running build
+[3.014s] running build_py
+[3.014s] running install
+[3.023s] running install_lib
+[3.058s] running install_data
+[3.058s] running install_egg_info
+[3.097s] removing '/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[3.097s] Copying ../build/movement_controller/movement_controller.egg-info to /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller-0.0.0-py3.12.egg-info
+[3.099s] running install_scripts
+[3.341s] Installing movement_controller_node script to /home/frans/mega_ws/src/install/movement_controller/lib/movement_controller
+[3.342s] writing list of installed files to '/home/frans/mega_ws/src/build/movement_controller/install.log'
+[3.380s] Invoked command in '/home/frans/mega_ws/src/movement_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_controller build --build-base /home/frans/mega_ws/src/build/movement_controller/build install --record /home/frans/mega_ws/src/build/movement_controller/install.log --single-version-externally-managed install_data

@@ -1,0 +1,27 @@
+# RViz configuration file
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Name: "root"
+  Displays:
+    - Class: rviz/RobotModel
+      Enabled: true
+      Name: "Robot Model"
+      Robot Description: "robot_description"
+    - Class: rviz/TF
+      Enabled: true
+      Name: "TF"
+    - Class: rviz/Marker
+      Enabled: true
+      Name: "Markers"
+    - Class: rviz/PointCloud2
+      Enabled: true
+      Name: "PointCloud"
+      Topic: "/camera/depth/points"
+    - Class: rviz/Image
+      Enabled: true
+      Name: "Camera Image"
+      Image Topic: "/image_raw"
+    - Class: rviz/InteractiveMarkers
+      Enabled: true
+      Name: "Interactive Markers"

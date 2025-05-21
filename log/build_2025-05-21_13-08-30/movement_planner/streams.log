@@ -1,0 +1,22 @@
+[2.590s] Invoking command in '/home/frans/mega_ws/src/movement_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_planner build --build-base /home/frans/mega_ws/src/build/movement_planner/build install --record /home/frans/mega_ws/src/build/movement_planner/install.log --single-version-externally-managed install_data
+[3.061s] running egg_info
+[3.100s] writing ../build/movement_planner/movement_planner.egg-info/PKG-INFO
+[3.100s] writing dependency_links to ../build/movement_planner/movement_planner.egg-info/dependency_links.txt
+[3.101s] writing entry points to ../build/movement_planner/movement_planner.egg-info/entry_points.txt
+[3.101s] writing requirements to ../build/movement_planner/movement_planner.egg-info/requires.txt
+[3.101s] writing top-level names to ../build/movement_planner/movement_planner.egg-info/top_level.txt
+[3.181s] reading manifest file '../build/movement_planner/movement_planner.egg-info/SOURCES.txt'
+[3.181s] adding license file 'LICENSE'
+[3.182s] writing manifest file '../build/movement_planner/movement_planner.egg-info/SOURCES.txt'
+[3.182s] running build
+[3.182s] running build_py
+[3.182s] running install
+[3.192s] running install_lib
+[3.229s] running install_data
+[3.230s] running install_egg_info
+[3.273s] removing '/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner-0.0.0-py3.12.egg-info' (and everything under it)
+[3.273s] Copying ../build/movement_planner/movement_planner.egg-info to /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner-0.0.0-py3.12.egg-info
+[3.274s] running install_scripts
+[3.553s] Installing movement_planner_node script to /home/frans/mega_ws/src/install/movement_planner/lib/movement_planner
+[3.553s] writing list of installed files to '/home/frans/mega_ws/src/build/movement_planner/install.log'
+[3.598s] Invoked command in '/home/frans/mega_ws/src/movement_planner' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_planner build --build-base /home/frans/mega_ws/src/build/movement_planner/build install --record /home/frans/mega_ws/src/build/movement_planner/install.log --single-version-externally-managed install_data

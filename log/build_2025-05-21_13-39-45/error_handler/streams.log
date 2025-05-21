@@ -1,0 +1,22 @@
+[1.443s] Invoking command in '/home/frans/mega_ws/src/error_handler': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/error_handler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/error_handler build --build-base /home/frans/mega_ws/src/build/error_handler/build install --record /home/frans/mega_ws/src/build/error_handler/install.log --single-version-externally-managed install_data
+[1.721s] running egg_info
+[1.743s] writing ../build/error_handler/error_handler.egg-info/PKG-INFO
+[1.743s] writing dependency_links to ../build/error_handler/error_handler.egg-info/dependency_links.txt
+[1.743s] writing entry points to ../build/error_handler/error_handler.egg-info/entry_points.txt
+[1.744s] writing requirements to ../build/error_handler/error_handler.egg-info/requires.txt
+[1.744s] writing top-level names to ../build/error_handler/error_handler.egg-info/top_level.txt
+[1.787s] reading manifest file '../build/error_handler/error_handler.egg-info/SOURCES.txt'
+[1.787s] adding license file 'LICENSE'
+[1.787s] writing manifest file '../build/error_handler/error_handler.egg-info/SOURCES.txt'
+[1.788s] running build
+[1.788s] running build_py
+[1.788s] running install
+[1.795s] running install_lib
+[1.819s] running install_data
+[1.819s] running install_egg_info
+[1.844s] removing '/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages/error_handler-0.0.0-py3.12.egg-info' (and everything under it)
+[1.844s] Copying ../build/error_handler/error_handler.egg-info to /home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages/error_handler-0.0.0-py3.12.egg-info
+[1.845s] running install_scripts
+[1.991s] Installing error_handler_node script to /home/frans/mega_ws/src/install/error_handler/lib/error_handler
+[1.991s] writing list of installed files to '/home/frans/mega_ws/src/build/error_handler/install.log'
+[2.033s] Invoked command in '/home/frans/mega_ws/src/error_handler' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/error_handler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/error_handler build --build-base /home/frans/mega_ws/src/build/error_handler/build install --record /home/frans/mega_ws/src/build/error_handler/install.log --single-version-externally-managed install_data

@@ -1,0 +1,40 @@
+[1.064s] Invoking command in '/home/frans/mega_ws/src/movement_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_controller build --build-base /home/frans/mega_ws/src/build/movement_controller/build install --record /home/frans/mega_ws/src/build/movement_controller/install.log --single-version-externally-managed install_data
+[1.314s] running egg_info
+[1.315s] creating ../build/movement_controller/movement_controller.egg-info
+[1.335s] writing ../build/movement_controller/movement_controller.egg-info/PKG-INFO
+[1.336s] writing dependency_links to ../build/movement_controller/movement_controller.egg-info/dependency_links.txt
+[1.336s] writing entry points to ../build/movement_controller/movement_controller.egg-info/entry_points.txt
+[1.336s] writing requirements to ../build/movement_controller/movement_controller.egg-info/requires.txt
+[1.336s] writing top-level names to ../build/movement_controller/movement_controller.egg-info/top_level.txt
+[1.336s] writing manifest file '../build/movement_controller/movement_controller.egg-info/SOURCES.txt'
+[1.375s] reading manifest file '../build/movement_controller/movement_controller.egg-info/SOURCES.txt'
+[1.376s] adding license file 'LICENSE'
+[1.376s] writing manifest file '../build/movement_controller/movement_controller.egg-info/SOURCES.txt'
+[1.376s] running build
+[1.376s] running build_py
+[1.376s] creating /home/frans/mega_ws/src/build/movement_controller/build
+[1.376s] creating /home/frans/mega_ws/src/build/movement_controller/build/lib
+[1.376s] creating /home/frans/mega_ws/src/build/movement_controller/build/lib/movement_controller
+[1.377s] copying movement_controller/__init__.py -> /home/frans/mega_ws/src/build/movement_controller/build/lib/movement_controller
+[1.377s] copying movement_controller/movement_controller_node.py -> /home/frans/mega_ws/src/build/movement_controller/build/lib/movement_controller
+[1.377s] running install
+[1.383s] running install_lib
+[1.403s] creating /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller
+[1.403s] copying /home/frans/mega_ws/src/build/movement_controller/build/lib/movement_controller/__init__.py -> /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller
+[1.403s] copying /home/frans/mega_ws/src/build/movement_controller/build/lib/movement_controller/movement_controller_node.py -> /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller
+[1.403s] byte-compiling /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller/__init__.py to __init__.cpython-312.pyc
+[1.403s] byte-compiling /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller/movement_controller_node.py to movement_controller_node.cpython-312.pyc
+[1.404s] running install_data
+[1.405s] creating /home/frans/mega_ws/src/install/movement_controller/share/ament_index
+[1.405s] creating /home/frans/mega_ws/src/install/movement_controller/share/ament_index/resource_index
+[1.405s] creating /home/frans/mega_ws/src/install/movement_controller/share/ament_index/resource_index/packages
+[1.405s] copying resource/movement_controller -> /home/frans/mega_ws/src/install/movement_controller/share/ament_index/resource_index/packages
+[1.405s] copying package.xml -> /home/frans/mega_ws/src/install/movement_controller/share/movement_controller
+[1.405s] creating /home/frans/mega_ws/src/install/movement_controller/share/movement_controller/launch
+[1.405s] copying launch/movement_controller_launch.py -> /home/frans/mega_ws/src/install/movement_controller/share/movement_controller/launch
+[1.405s] running install_egg_info
+[1.427s] Copying ../build/movement_controller/movement_controller.egg-info to /home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages/movement_controller-0.0.0-py3.12.egg-info
+[1.428s] running install_scripts
+[1.553s] Installing movement_controller_node script to /home/frans/mega_ws/src/install/movement_controller/lib/movement_controller
+[1.553s] writing list of installed files to '/home/frans/mega_ws/src/build/movement_controller/install.log'
+[1.593s] Invoked command in '/home/frans/mega_ws/src/movement_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_controller build --build-base /home/frans/mega_ws/src/build/movement_controller/build install --record /home/frans/mega_ws/src/build/movement_controller/install.log --single-version-externally-managed install_data

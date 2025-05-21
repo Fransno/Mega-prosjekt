@@ -1,0 +1,24 @@
+[1.530s] Invoking command in '/home/frans/mega_ws/src/camera_pipeline': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/camera_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pipeline build --build-base /home/frans/mega_ws/src/build/camera_pipeline/build install --record /home/frans/mega_ws/src/build/camera_pipeline/install.log --single-version-externally-managed install_data
+[1.848s] running egg_info
+[1.870s] writing ../build/camera_pipeline/camera_pipeline.egg-info/PKG-INFO
+[1.870s] writing dependency_links to ../build/camera_pipeline/camera_pipeline.egg-info/dependency_links.txt
+[1.870s] writing entry points to ../build/camera_pipeline/camera_pipeline.egg-info/entry_points.txt
+[1.870s] writing requirements to ../build/camera_pipeline/camera_pipeline.egg-info/requires.txt
+[1.870s] writing top-level names to ../build/camera_pipeline/camera_pipeline.egg-info/top_level.txt
+[1.914s] reading manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+[1.915s] writing manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+[1.915s] running build
+[1.915s] running build_py
+[1.916s] running install
+[1.922s] running install_lib
+[1.943s] running install_data
+[1.944s] running install_egg_info
+[1.966s] removing '/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline-0.0.0-py3.12.egg-info' (and everything under it)
+[1.966s] Copying ../build/camera_pipeline/camera_pipeline.egg-info to /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline-0.0.0-py3.12.egg-info
+[1.967s] running install_scripts
+[2.103s] Installing canny_edge script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[2.103s] Installing color_detector script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[2.104s] Installing cube_task_controller script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[2.104s] Installing gaussian_blur script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[2.104s] writing list of installed files to '/home/frans/mega_ws/src/build/camera_pipeline/install.log'
+[2.139s] Invoked command in '/home/frans/mega_ws/src/camera_pipeline' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/camera_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pipeline build --build-base /home/frans/mega_ws/src/build/camera_pipeline/build install --record /home/frans/mega_ws/src/build/camera_pipeline/install.log --single-version-externally-managed install_data

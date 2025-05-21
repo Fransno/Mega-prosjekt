@@ -1,0 +1,38 @@
+running egg_info
+creating ../build/movement_planner/movement_planner.egg-info
+writing ../build/movement_planner/movement_planner.egg-info/PKG-INFO
+writing dependency_links to ../build/movement_planner/movement_planner.egg-info/dependency_links.txt
+writing entry points to ../build/movement_planner/movement_planner.egg-info/entry_points.txt
+writing requirements to ../build/movement_planner/movement_planner.egg-info/requires.txt
+writing top-level names to ../build/movement_planner/movement_planner.egg-info/top_level.txt
+writing manifest file '../build/movement_planner/movement_planner.egg-info/SOURCES.txt'
+reading manifest file '../build/movement_planner/movement_planner.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/movement_planner/movement_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/frans/mega_ws/src/build/movement_planner/build
+creating /home/frans/mega_ws/src/build/movement_planner/build/lib
+creating /home/frans/mega_ws/src/build/movement_planner/build/lib/movement_planner
+copying movement_planner/__init__.py -> /home/frans/mega_ws/src/build/movement_planner/build/lib/movement_planner
+copying movement_planner/movement_planner_node.py -> /home/frans/mega_ws/src/build/movement_planner/build/lib/movement_planner
+running install
+running install_lib
+creating /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner
+copying /home/frans/mega_ws/src/build/movement_planner/build/lib/movement_planner/__init__.py -> /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner
+copying /home/frans/mega_ws/src/build/movement_planner/build/lib/movement_planner/movement_planner_node.py -> /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner
+byte-compiling /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner/movement_planner_node.py to movement_planner_node.cpython-312.pyc
+running install_data
+creating /home/frans/mega_ws/src/install/movement_planner/share/ament_index
+creating /home/frans/mega_ws/src/install/movement_planner/share/ament_index/resource_index
+creating /home/frans/mega_ws/src/install/movement_planner/share/ament_index/resource_index/packages
+copying resource/movement_planner -> /home/frans/mega_ws/src/install/movement_planner/share/ament_index/resource_index/packages
+copying package.xml -> /home/frans/mega_ws/src/install/movement_planner/share/movement_planner
+creating /home/frans/mega_ws/src/install/movement_planner/share/movement_planner/launch
+copying launch/movement_planner_launch.py -> /home/frans/mega_ws/src/install/movement_planner/share/movement_planner/launch
+running install_egg_info
+Copying ../build/movement_planner/movement_planner.egg-info to /home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages/movement_planner-0.0.0-py3.12.egg-info
+running install_scripts
+Installing movement_planner_node script to /home/frans/mega_ws/src/install/movement_planner/lib/movement_planner
+writing list of installed files to '/home/frans/mega_ws/src/build/movement_planner/install.log'

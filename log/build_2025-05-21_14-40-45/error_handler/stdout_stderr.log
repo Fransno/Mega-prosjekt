@@ -1,0 +1,23 @@
+running egg_info
+writing ../build/error_handler/error_handler.egg-info/PKG-INFO
+writing dependency_links to ../build/error_handler/error_handler.egg-info/dependency_links.txt
+writing entry points to ../build/error_handler/error_handler.egg-info/entry_points.txt
+writing requirements to ../build/error_handler/error_handler.egg-info/requires.txt
+writing top-level names to ../build/error_handler/error_handler.egg-info/top_level.txt
+reading manifest file '../build/error_handler/error_handler.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../build/error_handler/error_handler.egg-info/SOURCES.txt'
+running build
+running build_py
+copying error_handler/error_handler_node.py -> /home/frans/mega_ws/src/build/error_handler/build/lib/error_handler
+running install
+running install_lib
+copying /home/frans/mega_ws/src/build/error_handler/build/lib/error_handler/error_handler_node.py -> /home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages/error_handler
+byte-compiling /home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages/error_handler/error_handler_node.py to error_handler_node.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages/error_handler-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../build/error_handler/error_handler.egg-info to /home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages/error_handler-0.0.0-py3.12.egg-info
+running install_scripts
+Installing error_handler_node script to /home/frans/mega_ws/src/install/error_handler/lib/error_handler
+writing list of installed files to '/home/frans/mega_ws/src/build/error_handler/install.log'

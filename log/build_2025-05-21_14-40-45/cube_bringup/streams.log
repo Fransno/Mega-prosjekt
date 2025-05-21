@@ -1,0 +1,35 @@
+[0.785s] Invoking command in '/home/frans/mega_ws/src/cube_bringup': AMENT_PREFIX_PATH=/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/home/frans/mega_ws/src/install/custom_cube_msgs:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/cube_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/cube_bringup build --build-base /home/frans/mega_ws/src/build/cube_bringup/build install --record /home/frans/mega_ws/src/build/cube_bringup/install.log --single-version-externally-managed install_data
+[1.034s] running egg_info
+[1.035s] creating ../build/cube_bringup/cube_bringup.egg-info
+[1.054s] writing ../build/cube_bringup/cube_bringup.egg-info/PKG-INFO
+[1.054s] writing dependency_links to ../build/cube_bringup/cube_bringup.egg-info/dependency_links.txt
+[1.054s] writing requirements to ../build/cube_bringup/cube_bringup.egg-info/requires.txt
+[1.054s] writing top-level names to ../build/cube_bringup/cube_bringup.egg-info/top_level.txt
+[1.054s] writing manifest file '../build/cube_bringup/cube_bringup.egg-info/SOURCES.txt'
+[1.094s] reading manifest file '../build/cube_bringup/cube_bringup.egg-info/SOURCES.txt'
+[1.094s] adding license file 'LICENSE'
+[1.095s] writing manifest file '../build/cube_bringup/cube_bringup.egg-info/SOURCES.txt'
+[1.095s] running build
+[1.095s] running build_py
+[1.095s] creating /home/frans/mega_ws/src/build/cube_bringup/build
+[1.095s] creating /home/frans/mega_ws/src/build/cube_bringup/build/lib
+[1.095s] creating /home/frans/mega_ws/src/build/cube_bringup/build/lib/cube_bringup
+[1.096s] copying cube_bringup/__init__.py -> /home/frans/mega_ws/src/build/cube_bringup/build/lib/cube_bringup
+[1.096s] running install
+[1.101s] running install_lib
+[1.121s] creating /home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages/cube_bringup
+[1.121s] copying /home/frans/mega_ws/src/build/cube_bringup/build/lib/cube_bringup/__init__.py -> /home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages/cube_bringup
+[1.121s] byte-compiling /home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages/cube_bringup/__init__.py to __init__.cpython-312.pyc
+[1.121s] running install_data
+[1.122s] creating /home/frans/mega_ws/src/install/cube_bringup/share/ament_index
+[1.122s] creating /home/frans/mega_ws/src/install/cube_bringup/share/ament_index/resource_index
+[1.122s] creating /home/frans/mega_ws/src/install/cube_bringup/share/ament_index/resource_index/packages
+[1.122s] copying resource/cube_bringup -> /home/frans/mega_ws/src/install/cube_bringup/share/ament_index/resource_index/packages
+[1.122s] creating /home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/launch
+[1.122s] copying launch/cube_bringup_launch.py -> /home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/launch
+[1.122s] copying package.xml -> /home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup
+[1.122s] running install_egg_info
+[1.142s] Copying ../build/cube_bringup/cube_bringup.egg-info to /home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages/cube_bringup-0.0.0-py3.12.egg-info
+[1.143s] running install_scripts
+[1.265s] writing list of installed files to '/home/frans/mega_ws/src/build/cube_bringup/install.log'
+[1.289s] Invoked command in '/home/frans/mega_ws/src/cube_bringup' returned '0': AMENT_PREFIX_PATH=/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/home/frans/mega_ws/src/install/custom_cube_msgs:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/cube_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/cube_bringup build --build-base /home/frans/mega_ws/src/build/cube_bringup/build install --record /home/frans/mega_ws/src/build/cube_bringup/install.log --single-version-externally-managed install_data

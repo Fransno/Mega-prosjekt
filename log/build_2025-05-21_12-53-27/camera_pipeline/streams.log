@@ -1,0 +1,45 @@
+[2.532s] Invoking command in '/home/frans/mega_ws/src/camera_pipeline': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/camera_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pipeline build --build-base /home/frans/mega_ws/src/build/camera_pipeline/build install --record /home/frans/mega_ws/src/build/camera_pipeline/install.log --single-version-externally-managed install_data
+[2.998s] running egg_info
+[2.998s] creating ../build/camera_pipeline/camera_pipeline.egg-info
+[3.032s] writing ../build/camera_pipeline/camera_pipeline.egg-info/PKG-INFO
+[3.033s] writing dependency_links to ../build/camera_pipeline/camera_pipeline.egg-info/dependency_links.txt
+[3.033s] writing entry points to ../build/camera_pipeline/camera_pipeline.egg-info/entry_points.txt
+[3.033s] writing requirements to ../build/camera_pipeline/camera_pipeline.egg-info/requires.txt
+[3.034s] writing top-level names to ../build/camera_pipeline/camera_pipeline.egg-info/top_level.txt
+[3.034s] writing manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+[3.108s] reading manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+[3.108s] writing manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+[3.111s] running build
+[3.111s] running build_py
+[3.111s] creating /home/frans/mega_ws/src/build/camera_pipeline/build
+[3.111s] creating /home/frans/mega_ws/src/build/camera_pipeline/build/lib
+[3.111s] creating /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline
+[3.112s] copying camera_pipeline/__init__.py -> /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline
+[3.112s] copying camera_pipeline/color_detector.py -> /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline
+[3.112s] running install
+[3.124s] running install_lib
+[3.180s] creating /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline
+[3.180s] copying /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline/__init__.py -> /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline
+[3.180s] copying /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline/color_detector.py -> /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline
+[3.181s] byte-compiling /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline/__init__.py to __init__.cpython-312.pyc
+[3.181s] byte-compiling /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline/color_detector.py to color_detector.cpython-312.pyc
+[3.188s] running install_data
+[3.188s] creating /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index
+[3.188s] creating /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index/resource_index
+[3.188s] creating /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index/resource_index/packages
+[3.189s] copying resource/camera_pipeline -> /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index/resource_index/packages
+[3.189s] copying package.xml -> /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline
+[3.189s] creating /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/launch
+[3.190s] copying launch/pipeline.launch.py -> /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/launch
+[3.190s] creating /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/config
+[3.190s] creating /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/rviz
+[3.190s] copying rviz/cube_task_controller.rviz -> /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/rviz
+[3.190s] running install_egg_info
+[3.246s] Copying ../build/camera_pipeline/camera_pipeline.egg-info to /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline-0.0.0-py3.12.egg-info
+[3.247s] running install_scripts
+[3.566s] Installing canny_edge script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[3.567s] Installing color_detector script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[3.567s] Installing cube_task_controller script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[3.567s] Installing gaussian_blur script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+[3.567s] writing list of installed files to '/home/frans/mega_ws/src/build/camera_pipeline/install.log'
+[3.609s] Invoked command in '/home/frans/mega_ws/src/camera_pipeline' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/camera_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pipeline build --build-base /home/frans/mega_ws/src/build/camera_pipeline/build install --record /home/frans/mega_ws/src/build/camera_pipeline/install.log --single-version-externally-managed install_data

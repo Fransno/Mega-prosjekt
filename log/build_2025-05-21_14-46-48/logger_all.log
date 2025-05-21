@@ -1,0 +1,393 @@
+[0.090s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.090s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71e6e38994c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71e6e39c5a00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71e6e39c5a00>>, mixin_verb=('build',))
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.121s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/frans/mega_ws/src'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(camera_pipeline) by extension 'ros'
+[0.145s] DEBUG:colcon.colcon_core.package_identification:Package 'camera_pipeline' with type 'ros.ament_python' and name 'camera_pipeline'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(cube_bringup) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'cube_bringup' with type 'ros.ament_python' and name 'cube_bringup'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(custom_cube_msgs) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_cube_msgs' with type 'ros.ament_cmake' and name 'custom_cube_msgs'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(error_handler) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'error_handler' with type 'ros.ament_python' and name 'error_handler'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(movement_controller) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'movement_controller' with type 'ros.ament_python' and name 'movement_controller'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(movement_planner) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'movement_planner' with type 'ros.ament_python' and name 'movement_planner'
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.166s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/frans/mega_ws/src/install
+[0.168s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 369 installed packages in /opt/ros/jazzy
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'cmake_target' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'cmake_clean_cache' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'cmake_clean_first' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'cmake_force_configure' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'ament_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'catkin_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'camera_pipeline' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.214s] DEBUG:colcon.colcon_core.verb:Building package 'camera_pipeline' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frans/mega_ws/src/build/camera_pipeline', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frans/mega_ws/src/install/camera_pipeline', 'merge_install': False, 'path': '/home/frans/mega_ws/src/camera_pipeline', 'symlink_install': False, 'test_result_base': None}
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'cmake_target' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'custom_cube_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.215s] DEBUG:colcon.colcon_core.verb:Building package 'custom_cube_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frans/mega_ws/src/build/custom_cube_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frans/mega_ws/src/install/custom_cube_msgs', 'merge_install': False, 'path': '/home/frans/mega_ws/src/custom_cube_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'cmake_target' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'cmake_clean_cache' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'cmake_clean_first' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'cmake_force_configure' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'ament_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'catkin_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'error_handler' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.215s] DEBUG:colcon.colcon_core.verb:Building package 'error_handler' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frans/mega_ws/src/build/error_handler', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frans/mega_ws/src/install/error_handler', 'merge_install': False, 'path': '/home/frans/mega_ws/src/error_handler', 'symlink_install': False, 'test_result_base': None}
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'cmake_target' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.215s] Level 5:colcon.colcon_core.verb:set package 'movement_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.215s] DEBUG:colcon.colcon_core.verb:Building package 'movement_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frans/mega_ws/src/build/movement_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frans/mega_ws/src/install/movement_controller', 'merge_install': False, 'path': '/home/frans/mega_ws/src/movement_controller', 'symlink_install': False, 'test_result_base': None}
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'cmake_target' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'movement_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.216s] DEBUG:colcon.colcon_core.verb:Building package 'movement_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frans/mega_ws/src/build/movement_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frans/mega_ws/src/install/movement_planner', 'merge_install': False, 'path': '/home/frans/mega_ws/src/movement_planner', 'symlink_install': False, 'test_result_base': None}
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'cmake_target' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.216s] Level 5:colcon.colcon_core.verb:set package 'cube_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.216s] DEBUG:colcon.colcon_core.verb:Building package 'cube_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/frans/mega_ws/src/build/cube_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/frans/mega_ws/src/install/cube_bringup', 'merge_install': False, 'path': '/home/frans/mega_ws/src/cube_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.216s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.217s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.217s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/frans/mega_ws/src/camera_pipeline' with build type 'ament_python'
+[0.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pipeline', 'ament_prefix_path')
+[0.219s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/hook/ament_prefix_path.ps1'
+[0.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/hook/ament_prefix_path.dsv'
+[0.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/hook/ament_prefix_path.sh'
+[0.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.224s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/frans/mega_ws/src/error_handler' with build type 'ament_python'
+[0.224s] Level 1:colcon.colcon_core.shell:create_environment_hook('error_handler', 'ament_prefix_path')
+[0.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/error_handler/share/error_handler/hook/ament_prefix_path.ps1'
+[0.225s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/error_handler/share/error_handler/hook/ament_prefix_path.dsv'
+[0.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/error_handler/share/error_handler/hook/ament_prefix_path.sh'
+[0.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.226s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.228s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/frans/mega_ws/src/movement_controller' with build type 'ament_python'
+[0.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('movement_controller', 'ament_prefix_path')
+[0.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/hook/ament_prefix_path.ps1'
+[0.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/hook/ament_prefix_path.dsv'
+[0.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/hook/ament_prefix_path.sh'
+[0.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.233s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/frans/mega_ws/src/movement_planner' with build type 'ament_python'
+[0.233s] Level 1:colcon.colcon_core.shell:create_environment_hook('movement_planner', 'ament_prefix_path')
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/hook/ament_prefix_path.ps1'
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/hook/ament_prefix_path.dsv'
+[0.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/hook/ament_prefix_path.sh'
+[0.234s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.234s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.236s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/frans/mega_ws/src/custom_cube_msgs' with build type 'ament_cmake'
+[0.237s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/frans/mega_ws/src/custom_cube_msgs'
+[0.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.433s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/frans/mega_ws/src/camera_pipeline'
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.621s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/frans/mega_ws/src/error_handler'
+[0.621s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.621s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.836s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/frans/mega_ws/src/movement_controller'
+[0.836s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.836s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.024s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/frans/mega_ws/src/movement_planner'
+[1.024s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.024s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/build/custom_cube_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frans/mega_ws/src/install/cube_bringup:/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/frans/mega_ws/src/build/custom_cube_msgs -- -j8 -l8
+[1.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/build/custom_cube_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frans/mega_ws/src/install/cube_bringup:/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/frans/mega_ws/src/build/custom_cube_msgs -- -j8 -l8
+[1.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/build/custom_cube_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frans/mega_ws/src/install/cube_bringup:/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/frans/mega_ws/src/build/custom_cube_msgs
+[1.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_cube_msgs)
+[1.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/build/custom_cube_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/frans/mega_ws/src/install/cube_bringup:/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/frans/mega_ws/src/build/custom_cube_msgs
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs' for CMake module files
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs' for CMake config files
+[1.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_cube_msgs', 'cmake_prefix_path')
+[1.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/cmake_prefix_path.ps1'
+[1.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/cmake_prefix_path.dsv'
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/cmake_prefix_path.sh'
+[1.548s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/lib'
+[1.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_cube_msgs', 'ld_library_path_lib')
+[1.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/ld_library_path_lib.ps1'
+[1.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/ld_library_path_lib.dsv'
+[1.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/ld_library_path_lib.sh'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/bin'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/pkgconfig/custom_cube_msgs.pc'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages'
+[1.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_cube_msgs', 'pythonpath')
+[1.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/pythonpath.ps1'
+[1.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/pythonpath.dsv'
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/pythonpath.sh'
+[1.552s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/bin'
+[1.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.ps1'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.dsv'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.sh'
+[1.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.bash'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.zsh'
+[1.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/custom_cube_msgs/share/colcon-core/packages/custom_cube_msgs)
+[1.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_cube_msgs)
+[1.558s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs' for CMake module files
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs' for CMake config files
+[1.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_cube_msgs', 'cmake_prefix_path')
+[1.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/cmake_prefix_path.ps1'
+[1.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/cmake_prefix_path.dsv'
+[1.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/cmake_prefix_path.sh'
+[1.561s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/lib'
+[1.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_cube_msgs', 'ld_library_path_lib')
+[1.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/ld_library_path_lib.ps1'
+[1.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/ld_library_path_lib.dsv'
+[1.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/ld_library_path_lib.sh'
+[1.563s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/bin'
+[1.563s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/pkgconfig/custom_cube_msgs.pc'
+[1.563s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages'
+[1.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_cube_msgs', 'pythonpath')
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/pythonpath.ps1'
+[1.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/pythonpath.dsv'
+[1.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/hook/pythonpath.sh'
+[1.565s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/custom_cube_msgs/bin'
+[1.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.ps1'
+[1.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.dsv'
+[1.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.sh'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.bash'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.zsh'
+[1.569s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/custom_cube_msgs/share/colcon-core/packages/custom_cube_msgs)
+[1.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/error_handler': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/error_handler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/error_handler build --build-base /home/frans/mega_ws/src/build/error_handler/build install --record /home/frans/mega_ws/src/build/error_handler/install.log --single-version-externally-managed install_data
+[1.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/movement_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_planner build --build-base /home/frans/mega_ws/src/build/movement_planner/build install --record /home/frans/mega_ws/src/build/movement_planner/install.log --single-version-externally-managed install_data
+[1.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/movement_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_controller build --build-base /home/frans/mega_ws/src/build/movement_controller/build install --record /home/frans/mega_ws/src/build/movement_controller/install.log --single-version-externally-managed install_data
+[1.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/camera_pipeline': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/camera_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pipeline build --build-base /home/frans/mega_ws/src/build/camera_pipeline/build install --record /home/frans/mega_ws/src/build/camera_pipeline/install.log --single-version-externally-managed install_data
+[2.380s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler' for CMake module files
+[2.382s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler' for CMake config files
+[2.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/error_handler' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/error_handler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/error_handler build --build-base /home/frans/mega_ws/src/build/error_handler/build install --record /home/frans/mega_ws/src/build/error_handler/install.log --single-version-externally-managed install_data
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler/lib'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler/bin'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler/lib/pkgconfig/error_handler.pc'
+[2.384s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages'
+[2.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('error_handler', 'pythonpath')
+[2.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/error_handler/share/error_handler/hook/pythonpath.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/error_handler/share/error_handler/hook/pythonpath.dsv'
+[2.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/error_handler/share/error_handler/hook/pythonpath.sh'
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/error_handler/bin'
+[2.387s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(error_handler)
+[2.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/error_handler/share/error_handler/package.ps1'
+[2.388s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/error_handler/share/error_handler/package.dsv'
+[2.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/error_handler/share/error_handler/package.sh'
+[2.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/error_handler/share/error_handler/package.bash'
+[2.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/error_handler/share/error_handler/package.zsh'
+[2.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/error_handler/share/colcon-core/packages/error_handler)
+[2.421s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller' for CMake module files
+[2.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/movement_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_controller build --build-base /home/frans/mega_ws/src/build/movement_controller/build install --record /home/frans/mega_ws/src/build/movement_controller/install.log --single-version-externally-managed install_data
+[2.422s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller' for CMake config files
+[2.422s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller/lib'
+[2.422s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller/bin'
+[2.422s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller/lib/pkgconfig/movement_controller.pc'
+[2.423s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages'
+[2.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('movement_controller', 'pythonpath')
+[2.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/hook/pythonpath.ps1'
+[2.423s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/hook/pythonpath.dsv'
+[2.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/hook/pythonpath.sh'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_controller/bin'
+[2.424s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(movement_controller)
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/package.ps1'
+[2.425s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/package.dsv'
+[2.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/package.sh'
+[2.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/package.bash'
+[2.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_controller/share/movement_controller/package.zsh'
+[2.426s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/movement_controller/share/colcon-core/packages/movement_controller)
+[2.427s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline' for CMake module files
+[2.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/camera_pipeline' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/camera_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/camera_pipeline build --build-base /home/frans/mega_ws/src/build/camera_pipeline/build install --record /home/frans/mega_ws/src/build/camera_pipeline/install.log --single-version-externally-managed install_data
+[2.428s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline' for CMake config files
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline/lib'
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline/bin'
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline/lib/pkgconfig/camera_pipeline.pc'
+[2.429s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages'
+[2.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_pipeline', 'pythonpath')
+[2.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/hook/pythonpath.ps1'
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/hook/pythonpath.dsv'
+[2.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/hook/pythonpath.sh'
+[2.431s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/camera_pipeline/bin'
+[2.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_pipeline)
+[2.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/package.ps1'
+[2.432s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/package.dsv'
+[2.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/package.sh'
+[2.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/package.bash'
+[2.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/package.zsh'
+[2.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/camera_pipeline/share/colcon-core/packages/camera_pipeline)
+[2.434s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner' for CMake module files
+[2.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/movement_planner' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/movement_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/movement_planner build --build-base /home/frans/mega_ws/src/build/movement_planner/build install --record /home/frans/mega_ws/src/build/movement_planner/install.log --single-version-externally-managed install_data
+[2.434s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner' for CMake config files
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner/lib'
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner/bin'
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner/lib/pkgconfig/movement_planner.pc'
+[2.435s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages'
+[2.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('movement_planner', 'pythonpath')
+[2.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/hook/pythonpath.ps1'
+[2.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/hook/pythonpath.dsv'
+[2.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/hook/pythonpath.sh'
+[2.437s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/movement_planner/bin'
+[2.437s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(movement_planner)
+[2.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/package.ps1'
+[2.437s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/package.dsv'
+[2.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/package.sh'
+[2.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/package.bash'
+[2.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/movement_planner/share/movement_planner/package.zsh'
+[2.439s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/movement_planner/share/colcon-core/packages/movement_planner)
+[2.439s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/frans/mega_ws/src/cube_bringup' with build type 'ament_python'
+[2.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('cube_bringup', 'ament_prefix_path')
+[2.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/hook/ament_prefix_path.ps1'
+[2.440s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/hook/ament_prefix_path.dsv'
+[2.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/hook/ament_prefix_path.sh'
+[2.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.440s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.637s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/frans/mega_ws/src/cube_bringup'
+[2.637s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.637s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/frans/mega_ws/src/cube_bringup': AMENT_PREFIX_PATH=/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/home/frans/mega_ws/src/install/cube_bringup:/home/frans/mega_ws/src/install/custom_cube_msgs:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/cube_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/cube_bringup build --build-base /home/frans/mega_ws/src/build/cube_bringup/build install --record /home/frans/mega_ws/src/build/cube_bringup/install.log --single-version-externally-managed install_data
+[3.669s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup' for CMake module files
+[3.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/frans/mega_ws/src/cube_bringup' returned '0': AMENT_PREFIX_PATH=/home/frans/mega_ws/src/install/movement_planner:/home/frans/mega_ws/src/install/movement_controller:/home/frans/mega_ws/src/install/error_handler:/home/frans/mega_ws/src/install/camera_pipeline:/home/frans/mega_ws/src/install/cube_bringup:/home/frans/mega_ws/src/install/custom_cube_msgs:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/frans/mega_ws/src/build/cube_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_planner/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/movement_controller/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/error_handler/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages:/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/cube_bringup build --build-base /home/frans/mega_ws/src/build/cube_bringup/build install --record /home/frans/mega_ws/src/build/cube_bringup/install.log --single-version-externally-managed install_data
+[3.670s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup' for CMake config files
+[3.670s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup/lib'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup/bin'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup/lib/pkgconfig/cube_bringup.pc'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup/lib/python3.12/site-packages'
+[3.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('cube_bringup', 'pythonpath')
+[3.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/hook/pythonpath.ps1'
+[3.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/hook/pythonpath.dsv'
+[3.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/hook/pythonpath.sh'
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/frans/mega_ws/src/install/cube_bringup/bin'
+[3.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cube_bringup)
+[3.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/package.ps1'
+[3.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/package.dsv'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/package.sh'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/package.bash'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/frans/mega_ws/src/install/cube_bringup/share/cube_bringup/package.zsh'
+[3.674s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/frans/mega_ws/src/install/cube_bringup/share/colcon-core/packages/cube_bringup)
+[3.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.675s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.681s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.681s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.681s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.690s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.690s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frans/mega_ws/src/install/local_setup.ps1'
+[3.691s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/frans/mega_ws/src/install/_local_setup_util_ps1.py'
+[3.692s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frans/mega_ws/src/install/setup.ps1'
+[3.692s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frans/mega_ws/src/install/local_setup.sh'
+[3.693s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/frans/mega_ws/src/install/_local_setup_util_sh.py'
+[3.693s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frans/mega_ws/src/install/setup.sh'
+[3.694s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frans/mega_ws/src/install/local_setup.bash'
+[3.695s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frans/mega_ws/src/install/setup.bash'
+[3.696s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/frans/mega_ws/src/install/local_setup.zsh'
+[3.696s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/frans/mega_ws/src/install/setup.zsh'

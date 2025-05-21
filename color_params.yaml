@@ -1,0 +1,11 @@
+color_detector:
+  ros__parameters:
+    red_hsv_lower: [0, 150, 100] # Juster disse verdiene!
+    red_hsv_upper: [8, 255, 255]
+    # red_hsv_lower2: [170, 150, 100] # For den andre delen av rød
+    # red_hsv_upper2: [180, 255, 255]
+    yellow_hsv_lower: [22, 100, 150]
+    yellow_hsv_upper: [38, 255, 255]
+    blue_hsv_lower: [95, 100, 100]
+    blue_hsv_upper: [130, 255, 255]
+    contour_min_area: 400 # Juster etter behov

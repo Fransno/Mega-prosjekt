@@ -1,0 +1,43 @@
+running egg_info
+creating ../build/camera_pipeline/camera_pipeline.egg-info
+writing ../build/camera_pipeline/camera_pipeline.egg-info/PKG-INFO
+writing dependency_links to ../build/camera_pipeline/camera_pipeline.egg-info/dependency_links.txt
+writing entry points to ../build/camera_pipeline/camera_pipeline.egg-info/entry_points.txt
+writing requirements to ../build/camera_pipeline/camera_pipeline.egg-info/requires.txt
+writing top-level names to ../build/camera_pipeline/camera_pipeline.egg-info/top_level.txt
+writing manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+reading manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+writing manifest file '../build/camera_pipeline/camera_pipeline.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/frans/mega_ws/src/build/camera_pipeline/build
+creating /home/frans/mega_ws/src/build/camera_pipeline/build/lib
+creating /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline
+copying camera_pipeline/__init__.py -> /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline
+copying camera_pipeline/color_detector.py -> /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline
+running install
+running install_lib
+creating /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline
+copying /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline/__init__.py -> /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline
+copying /home/frans/mega_ws/src/build/camera_pipeline/build/lib/camera_pipeline/color_detector.py -> /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline
+byte-compiling /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline/color_detector.py to color_detector.cpython-312.pyc
+running install_data
+creating /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index
+creating /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index/resource_index
+creating /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index/resource_index/packages
+copying resource/camera_pipeline -> /home/frans/mega_ws/src/install/camera_pipeline/share/ament_index/resource_index/packages
+copying package.xml -> /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline
+creating /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/launch
+copying launch/pipeline.launch.py -> /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/launch
+creating /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/config
+creating /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/rviz
+copying rviz/cube_task_controller.rviz -> /home/frans/mega_ws/src/install/camera_pipeline/share/camera_pipeline/rviz
+running install_egg_info
+Copying ../build/camera_pipeline/camera_pipeline.egg-info to /home/frans/mega_ws/src/install/camera_pipeline/lib/python3.12/site-packages/camera_pipeline-0.0.0-py3.12.egg-info
+running install_scripts
+Installing canny_edge script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+Installing color_detector script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+Installing cube_task_controller script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+Installing gaussian_blur script to /home/frans/mega_ws/src/install/camera_pipeline/lib/camera_pipeline
+writing list of installed files to '/home/frans/mega_ws/src/build/camera_pipeline/install.log'

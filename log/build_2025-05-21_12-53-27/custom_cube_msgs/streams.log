@@ -1,0 +1,264 @@
+[0.359s] Invoking command in '/home/frans/mega_ws/src/build/custom_cube_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/frans/mega_ws/src/custom_cube_msgs -DCMAKE_INSTALL_PREFIX=/home/frans/mega_ws/src/install/custom_cube_msgs
+[1.367s] -- The C compiler identification is GNU 13.3.0
+[1.367s] -- The CXX compiler identification is GNU 13.3.0
+[1.367s] -- Detecting C compiler ABI info
+[1.367s] -- Detecting C compiler ABI info - done
+[1.367s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.367s] -- Detecting C compile features
+[1.367s] -- Detecting C compile features - done
+[1.367s] -- Detecting CXX compiler ABI info
+[1.368s] -- Detecting CXX compiler ABI info - done
+[1.368s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.368s] -- Detecting CXX compile features
+[1.368s] -- Detecting CXX compile features - done
+[1.368s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.368s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.368s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.368s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.381s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.494s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.503s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.688s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.484s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.410s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.425s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[4.628s] -- Found PythonExtra: /usr/bin/python3  
+[5.186s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[5.268s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.307s] -- Added test 'lint_cmake' to check CMake code style
+[5.309s] -- Added test 'xmllint' to check XML markup files
+[5.313s] -- Configuring done (4.9s)
+[5.361s] -- Generating done (0.0s)
+[5.377s] -- Build files have been written to: /home/frans/mega_ws/src/build/custom_cube_msgs
+[5.388s] Invoked command in '/home/frans/mega_ws/src/build/custom_cube_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/frans/mega_ws/src/custom_cube_msgs -DCMAKE_INSTALL_PREFIX=/home/frans/mega_ws/src/install/custom_cube_msgs
+[5.389s] Invoking command in '/home/frans/mega_ws/src/build/custom_cube_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/frans/mega_ws/src/build/custom_cube_msgs -- -j8 -l8
+[5.445s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.455s] [  2%] Built target ament_cmake_python_copy_custom_cube_msgs
+[5.785s] [  2%] Built target custom_cube_msgs__rosidl_generator_type_description
+[5.796s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.800s] running egg_info
+[5.801s] creating custom_cube_msgs.egg-info
+[5.808s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.834s] writing custom_cube_msgs.egg-info/PKG-INFO
+[5.834s] writing dependency_links to custom_cube_msgs.egg-info/dependency_links.txt
+[5.835s] writing top-level names to custom_cube_msgs.egg-info/top_level.txt
+[5.835s] writing manifest file 'custom_cube_msgs.egg-info/SOURCES.txt'
+[5.962s] reading manifest file 'custom_cube_msgs.egg-info/SOURCES.txt'
+[5.963s] writing manifest file 'custom_cube_msgs.egg-info/SOURCES.txt'
+[5.996s] [  6%] Built target ament_cmake_python_build_custom_cube_msgs_egg
+[6.227s] [  6%] Built target custom_cube_msgs__cpp
+[6.297s] [ 11%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_cube_msgs/msg/detail/cube_detection__functions.c.o[0m
+[6.297s] [ 11%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_cube_msgs/msg/detail/cube_detection__type_support.c.o[0m
+[6.299s] [ 13%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_cube_msgs/msg/detail/cube_detection__description.c.o[0m
+[6.300s] [ 15%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_cube_msgs/msg/detail/cube_detections__functions.c.o[0m
+[6.300s] [ 18%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_cube_msgs/msg/detail/cube_detections__description.c.o[0m
+[6.300s] [ 20%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_cube_msgs/msg/detail/cube_detections__type_support.c.o[0m
+[6.384s] [ 22%] [32m[1mLinking C shared library libcustom_cube_msgs__rosidl_generator_c.so[0m
+[6.428s] [ 22%] Built target custom_cube_msgs__rosidl_generator_c
+[6.442s] [ 27%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.442s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.443s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.444s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.444s] [ 34%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.444s] [ 36%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.843s] [ 40%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_cube_msgs/msg/cube_detections__type_support.cpp.o[0m
+[6.843s] [ 40%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_cube_msgs/msg/cube_detection__type_support.cpp.o[0m
+[6.885s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_cube_msgs/msg/detail/dds_fastrtps/cube_detections__type_support.cpp.o[0m
+[6.886s] [ 45%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_cube_msgs/msg/detail/dds_fastrtps/cube_detection__type_support.cpp.o[0m
+[6.953s] [ 47%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_cube_msgs/msg/cube_detection__type_support.cpp.o[0m
+[7.046s] [ 50%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_cube_msgs/msg/cube_detections__type_support.cpp.o[0m
+[7.111s] [ 52%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_cube_msgs/msg/detail/cube_detection__type_support.c.o[0m
+[7.114s] [ 54%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_cube_msgs/msg/detail/cube_detection__type_support.cpp.o[0m
+[7.132s] [ 56%] [32m[1mLinking CXX shared library libcustom_cube_msgs__rosidl_typesupport_c.so[0m
+[7.188s] [ 59%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_cube_msgs/msg/detail/cube_detections__type_support.c.o[0m
+[7.208s] [ 61%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_cube_msgs/msg/detail/cube_detection__type_support_c.cpp.o[0m
+[7.228s] [ 61%] Built target custom_cube_msgs__rosidl_typesupport_c
+[7.243s] [ 63%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_cube_msgs/msg/detail/cube_detections__type_support.cpp.o[0m
+[7.273s] [ 65%] [32m[1mLinking C shared library libcustom_cube_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.332s] [ 65%] Built target custom_cube_msgs__rosidl_typesupport_introspection_c
+[7.348s] [ 68%] [32mBuilding CXX object CMakeFiles/custom_cube_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_cube_msgs/msg/detail/cube_detections__type_support_c.cpp.o[0m
+[7.589s] [ 70%] [32m[1mLinking CXX shared library libcustom_cube_msgs__rosidl_typesupport_cpp.so[0m
+[7.658s] [ 70%] Built target custom_cube_msgs__rosidl_typesupport_cpp
+[7.894s] [ 72%] [32m[1mLinking CXX shared library libcustom_cube_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.934s] [ 75%] [32m[1mLinking CXX shared library libcustom_cube_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.995s] [ 75%] Built target custom_cube_msgs__rosidl_typesupport_introspection_cpp
+[8.033s] [ 75%] Built target custom_cube_msgs__rosidl_typesupport_fastrtps_cpp
+[8.184s] [ 77%] [32m[1mLinking CXX shared library libcustom_cube_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[8.270s] [ 77%] Built target custom_cube_msgs__rosidl_typesupport_fastrtps_c
+[8.292s] [ 77%] Built target custom_cube_msgs
+[8.315s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.808s] [ 79%] Built target custom_cube_msgs__py
+[8.831s] [ 84%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_cube_msgs/msg/_cube_detections_s.c.o[0m
+[8.831s] [ 84%] [32mBuilding C object CMakeFiles/custom_cube_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_cube_msgs/msg/_cube_detection_s.c.o[0m
+[9.022s] [ 86%] [32m[1mLinking C shared library libcustom_cube_msgs__rosidl_generator_py.so[0m
+[9.072s] [ 86%] Built target custom_cube_msgs__rosidl_generator_py
+[9.095s] [ 90%] [32mBuilding C object CMakeFiles/custom_cube_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/custom_cube_msgs/_custom_cube_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.095s] [ 90%] [32mBuilding C object CMakeFiles/custom_cube_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/custom_cube_msgs/_custom_cube_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.095s] [ 93%] [32mBuilding C object CMakeFiles/custom_cube_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/custom_cube_msgs/_custom_cube_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[9.230s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[9.230s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_c.so[0m
+[9.235s] [100%] [32m[1mLinking C shared module rosidl_generator_py/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[9.266s] [100%] Built target custom_cube_msgs_s__rosidl_typesupport_c
+[9.266s] [100%] Built target custom_cube_msgs_s__rosidl_typesupport_introspection_c
+[9.271s] [100%] Built target custom_cube_msgs_s__rosidl_typesupport_fastrtps_c
+[9.285s] Invoked command in '/home/frans/mega_ws/src/build/custom_cube_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/frans/mega_ws/src/build/custom_cube_msgs -- -j8 -l8
+[9.296s] Invoking command in '/home/frans/mega_ws/src/build/custom_cube_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/frans/mega_ws/src/build/custom_cube_msgs
+[9.305s] -- Install configuration: ""
+[9.305s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_cube_msgs
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/msg/CubeDetection.json
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/msg/CubeDetections.json
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__type_support.c
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__functions.h
+[9.306s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__description.c
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__struct.h
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__type_support.h
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__description.c
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__type_support.c
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__functions.h
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__functions.c
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__functions.c
+[9.307s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__type_support.h
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__struct.h
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/cube_detections.h
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/cube_detection.h
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/library_path.sh
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/library_path.dsv
+[9.308s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_generator_c.so
+[9.309s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_generator_c.so" to ""
+[9.309s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs
+[9.309s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg
+[9.309s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.309s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail
+[9.309s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__rosidl_typesupport_fastrtps_c.h
+[9.309s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__rosidl_typesupport_fastrtps_c.h
+[9.309s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_fastrtps_c.so
+[9.310s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.310s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs
+[9.310s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg
+[9.310s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail
+[9.310s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__type_support.c
+[9.310s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__type_support.c
+[9.310s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__rosidl_typesupport_introspection_c.h
+[9.310s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__rosidl_typesupport_introspection_c.h
+[9.310s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.311s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_introspection_c.so
+[9.311s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.311s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_c.so
+[9.311s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_c.so" to ""
+[9.311s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs
+[9.311s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg
+[9.311s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail
+[9.311s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__builder.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__type_support.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__struct.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__type_support.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__struct.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__traits.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__builder.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__traits.hpp
+[9.312s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.313s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/cube_detections.hpp
+[9.313s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/cube_detection.hpp
+[9.313s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs
+[9.313s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg
+[9.313s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail
+[9.313s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__rosidl_typesupport_fastrtps_cpp.hpp
+[9.313s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/dds_fastrtps
+[9.313s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[9.313s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.314s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.314s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.314s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs
+[9.314s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg
+[9.314s] -- Up-to-date: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail
+[9.314s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__type_support.cpp
+[9.314s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__type_support.cpp
+[9.314s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detections__rosidl_typesupport_introspection_cpp.hpp
+[9.314s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/include/custom_cube_msgs/custom_cube_msgs/msg/detail/cube_detection__rosidl_typesupport_introspection_cpp.hpp
+[9.314s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_introspection_cpp.so
+[9.315s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.315s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_cpp.so
+[9.315s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_typesupport_cpp.so" to ""
+[9.315s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/pythonpath.sh
+[9.315s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/pythonpath.dsv
+[9.315s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs-0.0.0-py3.12.egg-info
+[9.315s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/_custom_cube_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/__init__.py
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg
+[9.316s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/__init__.py
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/_cube_detections.py
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/_cube_detection.py
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/_cube_detections_s.c
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/_cube_detection_s.c
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_c.so
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_introspection_c.so
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/_custom_cube_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.317s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/_custom_cube_msgs_s.ep.rosidl_typesupport_c.c
+[9.368s] Listing '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs'...
+[9.368s] Compiling '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/__init__.py'...
+[9.369s] Listing '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg'...
+[9.369s] Compiling '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/__init__.py'...
+[9.369s] Compiling '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/_cube_detection.py'...
+[9.369s] Compiling '/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/msg/_cube_detections.py'...
+[9.376s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.376s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[9.376s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_introspection_c.so
+[9.376s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[9.377s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_c.so
+[9.377s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/python3.12/site-packages/custom_cube_msgs/custom_cube_msgs_s__rosidl_typesupport_c.so" to ""
+[9.377s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_generator_py.so
+[9.377s] -- Set non-toolchain portion of runtime path of "/home/frans/mega_ws/src/install/custom_cube_msgs/lib/libcustom_cube_msgs__rosidl_generator_py.so" to ""
+[9.377s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/msg/CubeDetection.idl
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/msg/CubeDetections.idl
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/msg/CubeDetection.msg
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/msg/CubeDetections.msg
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/ament_index/resource_index/package_run_dependencies/custom_cube_msgs
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/ament_index/resource_index/parent_prefix_path/custom_cube_msgs
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/ament_prefix_path.sh
+[9.378s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/ament_prefix_path.dsv
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/path.sh
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/environment/path.dsv
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/local_setup.bash
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/local_setup.sh
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/local_setup.zsh
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/local_setup.dsv
+[9.379s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.dsv
+[9.380s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/ament_index/resource_index/packages/custom_cube_msgs
+[9.380s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_generator_cExport.cmake
+[9.380s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.380s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.380s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.380s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_cExport.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_generator_cppExport.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.381s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.382s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.382s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_cppExport.cmake
+[9.382s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.382s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_generator_pyExport.cmake
+[9.382s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/export_custom_cube_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.382s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/rosidl_cmake-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.383s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgsConfig.cmake
+[9.384s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/cmake/custom_cube_msgsConfig-version.cmake
+[9.384s] -- Installing: /home/frans/mega_ws/src/install/custom_cube_msgs/share/custom_cube_msgs/package.xml
+[9.387s] Invoked command in '/home/frans/mega_ws/src/build/custom_cube_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/frans/mega_ws/src/build/custom_cube_msgs
