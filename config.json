@@ -1,0 +1,15 @@
+{
+    "color_boundary": {
+        "red_lower": [0, 30, 80],
+        "red_upper": [10, 255, 255],
+        "yellow_lower": [25, 30, 30],
+        "yellow_upper": [32, 255, 255],
+        "blue_lower": [90, 100, 100],
+        "blue_upper": [130, 255, 255],
+        "green_lower": [35, 100, 100],
+        "green_upper": [85, 255, 255]
+    },
+    "contour_min_area": 100,
+    "home_position": [0.0, 0.0, 0.0],
+    "zoom_value": 1
+}                                               
