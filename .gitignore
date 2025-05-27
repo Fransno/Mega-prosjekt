@@ -1,5 +1,10 @@
 devel/
+<<<<<<< HEAD
+=======
+install/
+>>>>>>> 7bc3030 (Frans og Oscar kombinert)
 logs/
+log/
 build/
 bin/
 lib/
