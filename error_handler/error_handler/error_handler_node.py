@@ -1,7 +1,11 @@
 import rclpy
+import json
 from rclpy.node import Node
 from std_msgs.msg import Int32, Float64MultiArray
+from collections import Counter
 
+with open('config.json') as file:
+    data = json.load(file)
 
 class ErrorHandlerNode(Node):
 
@@ -10,6 +14,8 @@ class ErrorHandlerNode(Node):
 
         self.controll_state = None
         self.error_counter = 0
+
+        self.wanted_counts = Counter([data["cube1"], data["cube2"], data["cube3"]])
 
         self.color_names = {
             1.0: "red",
@@ -32,11 +38,11 @@ class ErrorHandlerNode(Node):
             10
         )
 
-        self.controll_state_pub = self.create_publisher(
-            Int32,
-            'controll_state',
-            10
-        )
+        initial_msg = Int32()
+        initial_msg.data = data["controll_state"]
+        self.controll_state_pub.publish(initial_msg)
+
+        
 
     def controll_state_callback(self, msg):
         self.controll_state = msg.data
@@ -51,8 +57,7 @@ class ErrorHandlerNode(Node):
             "red": 0,
             "yellow": 0,
             "blue": 0,
-            "green": 0,
-            "total": 0
+            "green": 0
         }
         
         while i < len(data):
@@ -61,11 +66,11 @@ class ErrorHandlerNode(Node):
             
             color_name = self.color_names.get(color_code, "unknown")
             counts[color_name] += 1
-            counts["total"] += 1
              
         if self.error_counter >= 3:
             new_state = 4
-        elif counts['total'] == 3:
+        # Sjekk at du har minst så mange av hver ønsket kube
+        elif all(counts[color] >= self.wanted_counts[color] for color in self.wanted_counts):
             new_state = 1
         else:
             new_state = 2

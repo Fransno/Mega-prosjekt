@@ -1,7 +1,10 @@
 import rclpy
+import json
 from rclpy.node import Node
 from std_msgs.msg import Float64MultiArray
 
+with open('config.json') as file:
+    data = json.load(file)
 
 class MovementPlannerNode(Node):
 
@@ -15,11 +18,8 @@ class MovementPlannerNode(Node):
             4.0: "green"
         }
 
-        self.order = {
-            1.0: "red",
-            2.0: "yellow",
-            3.0: "blue",
-        }
+        self.cube_order = [data["cube1"], data["cube2"], data["cube3"]]
+        self.z = data["z"]
 
         self.detected_cubes_sub = self.create_subscription(
             Float64MultiArray,
@@ -38,24 +38,21 @@ class MovementPlannerNode(Node):
     def detected_cubes_callback(self, msg):
         data = msg.data
         i = 0
-        # Map color name to (x, y)
         cube_positions = {}
         while i < len(data):
             color_code = data[i]
             x = data[i+1]
             y = data[i+2]
             color_name = self.color_names.get(color_code, "unknown")
-            if color_name in self.order.values():
-                cube_positions[color_name] = (x, y)
+            cube_positions[color_name] = (x, y)
             i += 3
 
-        # Only publish if all three colors are present
-        if all(color in cube_positions for color in self.order.values()):
+        # Publish only if ALL desired cubes are present
+        if all(color in cube_positions for color in self.cube_order):
             positions = []
-            for color_code in sorted(self.order.keys()):
-                color_name = self.order[color_code]
-                x, y = cube_positions[color_name]
-                positions.extend([x, y, 10.0])
+            for color in self.cube_order:
+                x, y = cube_positions[color]
+                positions.extend([x, y, self.z])
             out_msg = Float64MultiArray()
             out_msg.data = positions
             self.planned_pos_pub.publish(out_msg)

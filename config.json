@@ -11,5 +11,10 @@
     },
     "contour_min_area": 100,
     "home_position": [0.0, 0.0, 0.0],
-    "zoom_value": 1
-}                                               
+    "zoom_value": 1,
+    "controll_state": 5,
+    "cube1": "blue",
+    "cube2": "yellow",
+    "cube3": "green",
+    "z": 10.0
+}
