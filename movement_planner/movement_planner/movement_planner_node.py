@@ -20,19 +20,10 @@ class MovementPlannerNode(Node):
 
         self.cube_order = [data["cube1"], data["cube2"], data["cube3"]]
         self.z = data["z"]
+        self.debug_mode = data["debug_mode"]
 
-        self.detected_cubes_sub = self.create_subscription(
-            Float64MultiArray,
-            'detected_cubes',
-            self.detected_cubes_callback,
-            10
-        )
-
-        self.planned_pos_pub = self.create_publisher(
-            Float64MultiArray,
-            'planned_pos',
-            10
-        )
+        self.detected_cubes_sub = self.create_subscription(Float64MultiArray,'detected_cubes',self.detected_cubes_callback,10)
+        self.planned_pos_pub = self.create_publisher(Float64MultiArray,'planned_pos',10)
 
 
     def detected_cubes_callback(self, msg):
@@ -58,7 +49,7 @@ class MovementPlannerNode(Node):
             self.planned_pos_pub.publish(out_msg)
 
 
-
+7
 def main(args=None):
     rclpy.init(args=args)
     movementPlanner = MovementPlannerNode()

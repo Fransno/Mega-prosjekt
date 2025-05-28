@@ -16,6 +16,7 @@ class ErrorHandlerNode(Node):
         self.error_counter = 0
 
         self.wanted_counts = Counter([data["cube1"], data["cube2"], data["cube3"]])
+        self.debug_mode = data["debug_mode"]
 
         self.color_names = {
             1.0: "red",
@@ -24,19 +25,9 @@ class ErrorHandlerNode(Node):
             4.0: "green"
         }
 
-        self.controll_state_sub = self.create_subscription(
-            Int32,
-            'controll_state',
-            self.controll_state_callback,
-            10
-        )
-
-        self.detected_cubes_sub = self.create_subscription(
-            Float64MultiArray,
-            'detected_cubes',
-            self.detected_cubes_callback,
-            10
-        )
+        self.detected_cubes_sub = self.create_subscription(Float64MultiArray,'detected_cubes',self.detected_cubes_callback,10)
+        self.controll_state_sub = self.create_subscription(Int32,'controll_state',self.controll_state_callback,10)
+        self.controll_state_pub = self.create_publisher(Int32,'controll_state',10)
 
         initial_msg = Int32()
         initial_msg.data = data["controll_state"]
@@ -46,12 +37,13 @@ class ErrorHandlerNode(Node):
 
     def controll_state_callback(self, msg):
         self.controll_state = msg.data
+        if self.debug_mode:
+            self.get_logger().info(f'Detected controll state: {self.controll_state}')
 
     def detected_cubes_callback(self, msg):
         if self.controll_state != 0:
             return
 
-        data = msg.data
         i = 0
         counts = {
             "red": 0,
@@ -60,24 +52,30 @@ class ErrorHandlerNode(Node):
             "green": 0
         }
         
-        while i < len(data):
-            color_code = data[i]
+        while i < len(msg.data):
+            color_code = msg.data[i]
             i += 3
-            
             color_name = self.color_names.get(color_code, "unknown")
             counts[color_name] += 1
              
         if self.error_counter >= 3:
             new_state = 4
-        # Sjekk at du har minst så mange av hver ønsket kube
+            if self.debug_mode:
+                self.get_logger().info(f'Counted 3 errors: {msg.data}')
         elif all(counts[color] >= self.wanted_counts[color] for color in self.wanted_counts):
             new_state = 1
+            if self.debug_mode:
+                self.get_logger().info(f'Cubes good with: {msg.data}')
         else:
             new_state = 2
             self.error_counter += 1
+            if self.debug_mode:
+                self.get_logger().info(f'Error: {msg.data}')
         out_msg = Int32()
         out_msg.data = new_state
         self.controll_state_pub.publish(out_msg)
+        if self.debug_mode:
+            self.get_logger().info(f'Published controll state: {new_state}')
 
 
 def main(args=None):

@@ -16,8 +16,10 @@ class ColorDetectorNode(Node):
         super().__init__('color_detector')
 
         # === Parameterverdier ===
-        self.red_lower = np.array(data["color_boundary"]["red_lower"])
-        self.red_upper = np.array(data["color_boundary"]["red_upper"])
+        self.red_lower1 = np.array(data["color_boundary"]["red_lower"])
+        self.red_upper1 = np.array(data["color_boundary"]["red_upper"])
+        self.red_lower2 = np.array(data["color_boundary"]["red2_lower"])
+        self.red_upper2 = np.array(data["color_boundary"]["red2_upper"])
         self.yellow_lower = np.array(data["color_boundary"]["yellow_lower"])
         self.yellow_upper = np.array(data["color_boundary"]["yellow_upper"])
         self.blue_lower = np.array(data["color_boundary"]["blue_lower"])
@@ -41,6 +43,7 @@ class ColorDetectorNode(Node):
         self.mask_publisher_green = self.create_publisher(Image, 'image_mask_green', 10)
         self.annotated_image_publisher = self.create_publisher(Image, 'image_annotated_detections', 10)
         self.detections_publisher = self.create_publisher(Float64MultiArray, 'detected_cubes', 10)
+        self.isolated_image_publisher = self.create_publisher(Image, 'image_isolated_colors', 10)
 
         self.bridge = CvBridge()
 
@@ -67,9 +70,12 @@ class ColorDetectorNode(Node):
             "green": 4.0
         }
         data = []
-
+        
+        
         # --- Prosessering for RØD ---
-        mask_r = cv2.inRange(hsv_image, self.red_lower, self.red_upper)
+        mask_r1 = cv2.inRange(hsv_image, self.red_lower1, self.red_upper1)
+        mask_r2 = cv2.inRange(hsv_image, self.red_lower2, self.red_upper2)
+        mask_r = cv2.bitwise_or(mask_r1, mask_r2)
         contours_r, _ = cv2.findContours(mask_r, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         red_coords = []
         for contour in contours_r:
@@ -139,6 +145,16 @@ class ColorDetectorNode(Node):
                 data.extend([color_codes[color], float(x), float(y)])
         detections_msg.data = data
 
+        # === Splotlight-effekt ===
+        combined_mask = cv2.bitwise_or(mask_r, mask_y)
+        combined_mask = cv2.bitwise_or(combined_mask, mask_b)
+        combined_mask = cv2.bitwise_or(combined_mask, mask_g)
+        hsv_dim = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)
+        hsv_dim[:, :, 2] = hsv_dim[:, :, 2] // 3
+        dimmed_image = cv2.cvtColor(hsv_dim, cv2.COLOR_HSV2BGR)
+        dimmed_image[combined_mask != 0] = cv_image[combined_mask != 0]
+        isolated_image = dimmed_image
+
         # === Publiser resultater ===
         self.detections_publisher.publish(detections_msg)
         self.mask_publisher_red.publish(self.bridge.cv2_to_imgmsg(mask_r, "mono8"))
@@ -146,6 +162,7 @@ class ColorDetectorNode(Node):
         self.mask_publisher_blue.publish(self.bridge.cv2_to_imgmsg(mask_b, "mono8"))
         self.mask_publisher_green.publish(self.bridge.cv2_to_imgmsg(mask_g, "mono8"))
         self.annotated_image_publisher.publish(self.bridge.cv2_to_imgmsg(annotated_image, "bgr8"))
+        self.isolated_image_publisher.publish(self.bridge.cv2_to_imgmsg(isolated_image, "bgr8"))
 
 def main(args=None):
     rclpy.init(args=args)
