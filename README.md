@@ -9,8 +9,8 @@ Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegg
 - **`camera_pipeline`** – Utfører bildebehandling og fargedeteksjon
 - **`error_handler`** – Sjekker at riktige kuber er funnet, og styrer systemtilstand
 - **`movement_planner`** – Planlegger posisjoner basert på kube-koordinater
-- **`movement_controller`** – Styrer robotens bevegelser mellom posisjoner
-- **`UR_mover`** – Uferdig node!
+- **`movement_controller`** – Koordinerer fremdriften i bevegelsessekvensen 
+- **`ur_mover`** – Uferdig node for bevegelse via MoveIt 
 - **`cube_bringup`** – Samler alle nodene i ett samlet launch-oppsett, untatt UR_mover
 
 ## Systemoversikt
@@ -19,7 +19,7 @@ Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegg
 2. `camera_pipeline` utfører HSV-fargebasert segmentering og publiserer kube-koordinater.
 3. `error_handler` sjekker om alle ønskede kuber er funnet, og sender tilstandsbeskjeder.
 4. `movement_planner` bygger ønsket posisjonsliste for robotarmen.
-5. `movement_controller` tolker tilstanden og sender bevegelser til roboten.
+5. `movement_controller` tolker tilstanden og sender bevegelser til roboten via ur_mover.
 6. `cube_bringup` starter hele systemet med én launchfil.
 
 ## Kontrolltilstander
@@ -84,6 +84,14 @@ ros2 launch movement_planner movement_planner_launch.py
 ros2 launch movement_controller movement_controller_launch.py
 ```
 
+### Debug_mode
+
+For å kjøre debug mode uten fysisk oppkobling til robot, sikre at debug_mode = TRUE i config.json før oppstart. Systemet vil da initialisere alle debug statements, og du kan trigge en bevegelse manuelt med følgende kommando:
+
+```bash
+ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
+```
+
 ## Fargekoder i meldinger
 
 - `1.0` = Rød
@@ -93,10 +101,34 @@ ros2 launch movement_controller movement_controller_launch.py
 
 ## Avhengigheter
 
-- ROS2 (Jazzy)
-- `rclpy`, `std_msgs`, `sensor_msgs`
-- `OpenCV`, `NumPy`, `cv_bridge`
-- USB-kamera med støtte for V4L2
+### Maskinvare
+- Kamera med støtte for V4L2 (Video4Linux2)
+- UR-robotarm (via `ur_robot_driver`)
+
+### ROS 2-pakker (installeres via rosdep eller apt)
+- `rclpy`
+- `std_msgs`
+- `geometry_msgs`
+- `sensor_msgs`
+- `shape_msgs`
+- `moveit_msgs`
+- `moveit_ros_move_group`
+- `moveit_ros_planning_interface`
+- `moveit_ros_planning`
+- `moveit_ros_perception`
+- `moveit_ros_occupancy_map_monitor`
+- `moveit_ros_robot_interaction`
+- `ur_robot_driver`
+- `cv_bridge`
+
+### Python-biblioteker (installeres via pip)
+- `opencv-python`
+- `numpy`
+
+### Standardbiblioteker (følger med Python)
+- `threading`
+- `collections`
+
 
 ## Lisens
 
