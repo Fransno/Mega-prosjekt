@@ -3,6 +3,7 @@ import json
 from rclpy.node import Node
 from std_msgs.msg import Int32, Float64MultiArray
 from collections import Counter
+import time
 
 with open('config.json') as file:
     data = json.load(file)
@@ -29,9 +30,14 @@ class ErrorHandlerNode(Node):
         self.controll_state_sub = self.create_subscription(Int32,'controll_state',self.controll_state_callback,10)
         self.controll_state_pub = self.create_publisher(Int32,'controll_state',10)
 
+        while self.controll_state_pub.get_subscription_count() == 0:
+            self.get_logger().info('Waiting for subscriber to /controll_state...')
+            time.sleep(0.1)
+        
         initial_msg = Int32()
-        initial_msg.data = data["controll_state"]
+        initial_msg.data = 3
         self.controll_state_pub.publish(initial_msg)
+        self.get_logger().info('Published initial controll state: 3')
 
         
 
