@@ -21,7 +21,6 @@ Dette ROS2-pakken håndterer bildeinnhenting fra USB-kamera og fargedeteksjon i 
 
 ## Avhengigheter
 
-- ROS2 (Jazzy)
 - `cv_bridge`, `sensor_msgs`, `std_msgs`, `usb_cam`
 - OpenCV og NumPy
 
