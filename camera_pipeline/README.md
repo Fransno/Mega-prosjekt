@@ -28,9 +28,12 @@ Dette ROS2-pakken håndterer bildeinnhenting fra USB-kamera og fargedeteksjon i 
 ## Oppsett og kjøring
 
 1. Installer avhengigheter:
+
    ```bash sudo apt install ros-humble-usb-cam ros-humble-cv-bridge```
-2. Legg til pakken i ditt ROS2-workspace og bygg:
+3. Legg til pakken i ditt ROS2-workspace og bygg:
+
    ```colcon build --packages-select camera_pipeline```
-4. Kjør launch-filen:
+5. Kjør launch-filen:
+
    ```ros2 launch camera_pipeline pipeline_launch.py```
 
