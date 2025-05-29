@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'robot_comm'
+package_name = 'ur_mover'
 
 setup(
     name=package_name,
@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'robot_comm_node = robot_comm.robot_comm_node:main',
+            'ur_mover_node = ur_mover.ur_mover_node:main',
         ],
     },
 )
