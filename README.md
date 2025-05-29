@@ -1,6 +1,6 @@
 # Kubepeker – ROS2 Mega Prosjekt AIS2105
 
-Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegge posisjoner og styre en robotarm til å peke på dem i gitt rekkefølge. Systemet er delt inn i fem ROS2-pakker:
+Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegge posisjoner og styre en robotarm til å peke på dem i gitt rekkefølge. Systemet er delt inn i seks ROS2-pakker:
 
 ## Pakker
 
@@ -8,7 +8,8 @@ Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegg
 - **`error_handler`** – Sjekker at riktige kuber er funnet, og styrer systemtilstand
 - **`movement_planner`** – Planlegger posisjoner basert på kube-koordinater
 - **`movement_controller`** – Styrer robotens bevegelser mellom posisjoner
-- **`cube_bringup`** – Samler alle nodene i ett samlet launch-oppsett
+- **`UR_mover`** – Uferdig node!
+- **`cube_bringup`** – Samler alle nodene i ett samlet launch-oppsett, untatt UR_mover
 
 ## Systemoversikt
 
