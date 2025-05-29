@@ -1,8 +1,9 @@
 {
     "color_boundary": {
-        "red_lower": [0, 50, 50],
+        // HSV-grenser for fargegjenkjenning (H: 0–180, S: 0–255, V: 0–255)
+        "red_lower": [0, 50, 50], // Første del av rødfargen (lav H-verdi)
         "red_upper": [15, 255, 255],
-        "red2_lower": [155, 50, 50],
+        "red2_lower": [155, 50, 50], // Andre del av rødfargen (høy H-verdi)
         "red2_upper": [190, 255, 255],
         "yellow_lower": [20, 50, 50],
         "yellow_upper": [40, 255, 255],
@@ -11,17 +12,18 @@
         "green_lower": [35, 50, 50],
         "green_upper": [90, 255, 255]
     },
-    "contour_min_area": 100,
-    "home_position": [0.0, 0.0, 50.0],
-    "zoom_value": 10.0,
-    "controll_state": 5,
+    "contour_min_area": 100, // Minimum areal på konturer for at det skal telles som kube
+    "home_position": [0.0, 0.0, 50.0], // Start-/hvileposisjon for roboten (x, y, z)
+    "zoom_value": 10.0, // Hvor mye z økes ved rescan
+    "controll_state": 3, // Initial tilstand roboten starter i (3 = flytt til home)
     "cube1": "blue",
     "cube2": "red",
     "cube3": "yellow",
-    "z": 10.0,
-    "debug_mode": true,
+    "z": 10.0, // Z-høyde som brukes for posisjonsplanlegging (lavere enn home)
+    "debug_mode": true, // Slår på loggutskrifter i konsoll
 
     "pipeline.launch.py": {
+        // Kamera-innstillinger som brukes ved launch
         "autoexposure": false,
         "exposure_absolute": 200,
         "auto_white_balance": false,
