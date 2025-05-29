@@ -1,4 +1,4 @@
-# Robotisk kubepeker – ROS2-basert system
+# Kubepeker – ROS2 Mega Prosjekt AIS2105
 
 Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegge posisjoner og styre en robotarm til å peke på dem i gitt rekkefølge. Systemet er delt inn i fem ROS2-pakker:
 
