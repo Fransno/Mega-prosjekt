@@ -13,6 +13,7 @@ Dette ROS2-pakken inneholder noden `error_handler_node`, som overvåker deteksjo
 - `rclpy`
 - `std_msgs`
 - `collections`
+- `time`
 
 ## Beskrivelse av funksjon
 
