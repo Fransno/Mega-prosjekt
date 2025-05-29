@@ -2,6 +2,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
+    # Returnerer en LaunchDescription som starter error_handler-noden
     return LaunchDescription([
         Node(
             package='error_handler',
