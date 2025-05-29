@@ -45,5 +45,6 @@ data: [1.0, 320.0, 240.0, 2.0, 400.0, 250.0, 3.0, 100.0, 150.0]`
 ## Konfigurasjon
 
 `config.json` inneholder fargegrenser og kamerainnstillinger (eksponering, kontrast osv.).
+
 Du kan tilpasse `default_cam.yaml` for kamerakalibrering hvis nødvendig.
 
