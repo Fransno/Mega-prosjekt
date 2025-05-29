@@ -33,7 +33,7 @@ Noden publiserer til:
 
 ### Logikk
 
-1. Initialiseres med ønsket kube-sekvens fra `config.json`.
+1. Initialiseres med ønsket kube-sekvens fra `config.json`, og publiserer kontrolltilstand `3` for å flytte roboten til hjem posisjon.
 2. Teller antall forekomster av hver farge i `detected_cubes`.
 3. Hvis alle ønskede kuber er funnet: Publiser kontrolltilstand `1`.
 4. Hvis noen mangler: Publiser `2` og øk intern feil-teller.
