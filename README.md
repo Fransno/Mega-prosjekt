@@ -1,28 +1,54 @@
-# Kubepeker – ROS2-basert system
+# Robotisk kubepeker – ROS2-basert system
 
-Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegge posisjoner og styre en UR robotarm til å peke på dem i gitt rekkefølge. Systemet er delt inn i seks hovedpakker:
+Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegge posisjoner og styre en robotarm til å peke på dem i gitt rekkefølge. Systemet er delt inn i fem ROS2-pakker:
 
-- `camera_pipeline`: Utfører fargedeteksjon med OpenCV
-- `error_handler`: Overvåker at riktige kuber er funnet
-- `movement_planner`: Planlegger posisjoner basert på kube-koordinater
-- `movement_controller`: Styrer selve bevegelsen basert på systemets kontrolltilstand
-- BRINGUP
-- URMOVER
+## Pakker
+
+- **`camera_pipeline`** – Utfører bildebehandling og fargedeteksjon
+- **`error_handler`** – Sjekker at riktige kuber er funnet, og styrer systemtilstand
+- **`movement_planner`** – Planlegger posisjoner basert på kube-koordinater
+- **`movement_controller`** – Styrer robotens bevegelser mellom posisjoner
+- **`cube_bringup`** – Samler alle nodene i ett samlet launch-oppsett
 
 ## Systemoversikt
 
 1. Kamera strømmer bilder.
-2. `camera_pipeline` utfører fargebasert segmentering i HSV og publiserer kube-koordinater.
-3. `error_handler` sjekker om alle ønskede kuber er funnet, og styrer videre flyt.
+2. `camera_pipeline` utfører HSV-fargebasert segmentering og publiserer kube-koordinater.
+3. `error_handler` sjekker om alle ønskede kuber er funnet, og sender tilstandsbeskjeder.
 4. `movement_planner` bygger ønsket posisjonsliste for robotarmen.
-5. `movement_controller` styrer roboten til hjemposisjon, zoomer, eller peker på kuber.
+5. `movement_controller` tolker tilstanden og sender bevegelser til roboten.
+6. `cube_bringup` starter hele systemet med én launchfil.
+
+## Kontrolltilstander
+
+- `0` = Avventer kubeinput
+- `1` = Klar for planlegging og bevegelse (alle kuber funnet)
+- `2` = Rescan (ikke alle kuber funnet)
+- `3` = Returner til hjemposisjon (f.eks. ved oppstart)
+- `4` = Abort (for mange mislykkede forsøk)
+- `5` = Init (startverdi satt i `config.json`)
 
 ## Konfigurasjon
 
-Systemet bruker en felles `config.json`-fil som definerer fargegrenser, posisjoner og systemoppførsel. Eksempel:
+En felles `config.json` brukes for å sette:
+- HSV-fargegrenser
+- Minimumskrav for kontur-område
+- Kube-rekkefølge (`cube1`, `cube2`, `cube3`)
+- Startposisjon og zoom-parameter
+- Kamerainnstillinger
+- Debug-modus
 
+Eksempel:
 ```json
 {
+  "cube1": "blue",
+  "cube2": "red",
+  "cube3": "yellow",
+  "home_position": [0.0, 0.0, 50.0],
+  "z": 10.0,
+  "zoom_value": 10.0,
+  "controll_state": 5,
+  "debug_mode": true,
   "color_boundary": {
     "red_lower": [0, 50, 50],
     "red_upper": [15, 255, 255],
@@ -35,73 +61,41 @@ Systemet bruker en felles `config.json`-fil som definerer fargegrenser, posisjon
     "green_lower": [35, 50, 50],
     "green_upper": [90, 255, 255]
   },
-  "contour_min_area": 100,
-  "home_position": [0.0, 0.0, 50.0],
-  "zoom_value": 10.0,
-  "controll_state": 5,
-  "cube1": "blue",
-  "cube2": "red",
-  "cube3": "yellow",
-  "z": 10.0,
-  "debug_mode": true,
-  "pipeline.launch.py": {
-    "autoexposure": false,
-    "exposure_absolute": 200,
-    "auto_white_balance": false,
-    "white_balance_temperature": 55000,
-    "brightness": 5,
-    "contrast": 20,
-    "saturation": 30,
-    "gain": 2
-  }
+  "contour_min_area": 100
 }
 ```
 
-
-
-## Kontrolltilstander
-
-Systemet opererer med enkle tilstandskoder for koordinering:
-
-- `0` = Avventer kubeinput
-- `1` = Klar for planlegging og bevegelse
-- `2` = Rescan (ikke alle kuber funnet)
-- `3` = Returner til hjemposisjon (starttilstand)
-- `4` = Avbryt etter for mange feil
-- `5` = Init (fra config)
-
 ## Oppstart
 
-Start pakkene enkeltvis med f.eks.:
+For å starte hele systemet:
+
+```bash
+ros2 launch cube_bringup cube_bringup_launch.py
+```
+
+Alternativt kan du starte hver node individuelt:
+
 ```bash
 ros2 launch camera_pipeline pipeline_launch.py
 ros2 launch error_handler error_handler_launch.py
 ros2 launch movement_planner movement_planner_launch.py
-ros2 launch movement_controller movement_controller_launch.py -- blir feil
-
-andre greiene
-
+ros2 launch movement_controller movement_controller_launch.py
 ```
 
-## Fargekoder
+## Fargekoder i meldinger
 
-Farger representeres som tall i `detected_cubes`:
 - `1.0` = Rød
 - `2.0` = Gul
 - `3.0` = Blå
 - `4.0` = Grønn
 
-## Ekstra funksjonalitet
-
-- **Debug-modus**: Slår på logging for feilsøking
-- **Zoom-effekt**: Flytter robotarmen opp ved rescan
-- **Sirkulær tilstandsmaskin**: Returnerer til tilstand 0 etter handlinger
-- legge til for flere kuber av samme farge osv. 
-
-
 ## Avhengigheter
 
-- ROS2 (Jazzy)
-- OpenCV (`cv2`)
-- NumPy
-- `cv_bridge`, `usb_cam`, `std_msgs`, `sensor_msgs`
+- ROS2 (f.eks. Humble)
+- `rclpy`, `std_msgs`, `sensor_msgs`
+- `OpenCV`, `NumPy`, `cv_bridge`
+- USB-kamera med støtte for V4L2
+
+## Lisens
+
+Apache-2.0
