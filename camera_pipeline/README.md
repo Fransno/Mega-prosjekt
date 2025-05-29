@@ -39,8 +39,8 @@ Dette ROS2-pakken håndterer bildeinnhenting fra USB-kamera og fargedeteksjon i 
 
 ### Eksempel på melding
 
-```/detected_cubes: Float64MultiArray
-data: [1.0, 320.0, 240.0, 2.0, 400.0, 250.0, 3.0, 100.0, 150.0]```
+`/detected_cubes: Float64MultiArray
+data: [1.0, 320.0, 240.0, 2.0, 400.0, 250.0, 3.0, 100.0, 150.0]`
 
 ## Konfigurasjon
 
