@@ -91,7 +91,7 @@ ros2 launch movement_controller movement_controller_launch.py
 
 ## Avhengigheter
 
-- ROS2 (f.eks. Humble)
+- ROS2 (Jazzy)
 - `rclpy`, `std_msgs`, `sensor_msgs`
 - `OpenCV`, `NumPy`, `cv_bridge`
 - USB-kamera med støtte for V4L2
