@@ -1,5 +1,3 @@
-ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
-
 # Kubepeker – ROS2 Mega Prosjekt AIS2105
 
 Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegge posisjoner og styre en robotarm til å peke på dem i gitt rekkefølge. Systemet er delt inn i seks ROS2-pakker:
