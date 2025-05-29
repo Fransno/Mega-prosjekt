@@ -2,18 +2,25 @@ camera_matrix:
   rows: 3
   cols: 3
   data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+  # Kameraets intrinsiske matrise (fx, fy, cx, cy). Denne er her identitet, så den er ikke kalibrert.
+  
 distortion_coefficients:
   rows: 1
   cols: 5
   data: [0.0, 0.0, 0.0, 0.0, 0.0]
-distortion_model: plumb_bob
+  # Linsens forvrengningskoeffisienter (k1, k2, p1, p2, k3). Her er det ingen forvrengning.
+  
+distortion_model: plumb_bob # Standardmodell for radial og tangensiell forvrengning
 image_width: 640
 image_height: 480
 rectification_matrix:
   rows: 3
   cols: 3
   data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+  # Brukes ved stereo-rektifisering. Identitet her -> ingen rektifisering.
+  
 projection_matrix:
   rows: 3
   cols: 4
-  data: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+  data: [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0] 
+  # Kombinerer intrinsic og extrinsic parametere. Her er det enkle standardverdier.
