@@ -28,7 +28,7 @@ Noden publiserer til:
 - `0` = Avventer kubeinput
 - `1` = Klar for planlegging og bevegelse (alle kuber funnet)
 - `2` = Rescan (ikke alle kuber funnet)
-- `3` = Returner til hjemposisjon
+- `3` = Returner til hjemposisjon (start-/resettilstand, håndteres av controller)
 - `4` = Abort (flere feilforsøk enn tillatt)
 
 ### Logikk
