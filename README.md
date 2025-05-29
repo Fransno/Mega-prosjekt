@@ -24,9 +24,8 @@ Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegg
 - `0` = Avventer kubeinput
 - `1` = Klar for planlegging og bevegelse (alle kuber funnet)
 - `2` = Rescan (ikke alle kuber funnet)
-- `3` = Returner til hjemposisjon (f.eks. ved oppstart)
+- `3` = Returner til hjemposisjon (ved oppstart)
 - `4` = Abort (for mange mislykkede forsøk)
-- `5` = Init (startverdi satt i `config.json`)
 
 ## Konfigurasjon
 
