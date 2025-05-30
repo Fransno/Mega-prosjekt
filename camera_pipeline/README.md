@@ -7,7 +7,6 @@ Dette ROS2-pakken håndterer bildeinnhenting fra USB-kamera og fargedeteksjon i 
 - `color_detector.py`: Hovednoden for fargedeteksjon.
 - `launch/pipeline_launch.py`: Starter både `usb_cam` og `color_detector` med tilpassede kamerainnstillinger.
 - `config/default_cam.yaml`: Standard kamerakalibreringsfil.
-- `config.json`: Inneholder terskler for fargedeteksjon og kamerainnstillinger.
 
 ## Funksjonalitet
 
