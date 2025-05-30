@@ -1,22 +1,32 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+             schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
+  <!-- Navn og versjon -->
   <name>camera_pipeline</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="oscar@todo.todo">oscar</maintainer>
-  <license>TODO: License declaration</license>
 
+  <!-- Kort beskrivelse av hva pakken gjør -->
+  <description>Python-basert ROS2-pakke for fargedeteksjon og bildebehandling.</description>
+
+  <!-- Vedlikeholder og kontaktinfo -->
+  <maintainer email="oscar@example.com">Oscar</maintainer>
+  <license>MIT</license> <!-- Eller 'Apache-2.0', 'BSD-3-Clause', etc. -->
+
+  <!-- Kjøretidsavhengigheter -->
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
   <depend>cv_bridge</depend>
-  <depend>json</depend>
+  <depend>opencv-python</depend> <!-- Hvis OpenCV brukes direkte -->
+  <!-- Ikke nødvendig å inkludere 'json' – det er en del av standardbiblioteket -->
 
+  <!-- Testavhengigheter -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
 
+  <!-- Eksportert byggetype for Python-pakke -->
   <export>
     <build_type>ament_python</build_type>
   </export>
