@@ -96,7 +96,7 @@ ros2 launch movement_controller movement_controller_launch.py
 
 ### Debug_mode
 
-For å kjøre debug mode uten fysisk oppkobling til robot, sikre at `debug_mode = TRUE` i `config.json` før oppstart. Systemet vil da initialisere alle debug statements, og du kan trigge en bevegelse manuelt med følgende kommando:
+For å kjøre debug mode uten fysisk oppkobling til robot, sikre at `debug_mode = TRUE` i `config.json` før oppstart. Systemet vil da initialisere alle debug statements, og du kan simulere en fullført bevegelse manuelt med følgende kommando:
 
 ```bash
 ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
