@@ -20,6 +20,18 @@ Dette systemet bruker ROS2 og et kamera til å detektere fargede kuber, planlegg
 5. `movement_controller` tolker tilstanden og sender bevegelser til roboten via ur_mover.
 6. `cube_bringup` starter hele systemet med én launchfil.
 
+### Systemflyt
+
+Diagrammet under viser informasjonsflyten mellom nodene i systemet:
+
+<img src="https://github.com/user-attachments/assets/24aca4b4-0965-4194-8a03-b1cea633aaf0" alt="camera-5" width="200"/>
+
+- Ovale former representerer ROS2-noder.
+- Rektangler representerer meldinger (topics) mellom nodene.
+- `camera` og `detector` er del av `camera_pipeline`.
+- `UR mover` mottar planlagt bevegelse og styrer robotarmen.
+
+
 ## Kontrolltilstander
 
 - `0` = Avventer kubeinput
@@ -84,7 +96,7 @@ ros2 launch movement_controller movement_controller_launch.py
 
 ### Debug_mode
 
-For å kjøre debug mode uten fysisk oppkobling til robot, sikre at debug_mode = TRUE i config.json før oppstart. Systemet vil da initialisere alle debug statements, og du kan trigge en bevegelse manuelt med følgende kommando:
+For å kjøre debug mode uten fysisk oppkobling til robot, sikre at `debug_mode = TRUE` i `config.json` før oppstart. Systemet vil da initialisere alle debug statements, og du kan trigge en bevegelse manuelt med følgende kommando:
 
 ```bash
 ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
@@ -109,6 +121,10 @@ ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
 - `geometry_msgs`
 - `sensor_msgs`
 - `shape_msgs`
+- `cv_bridge`
+- `ur_robot_driver`
+
+#### MoveIt-komponenter
 - `moveit_msgs`
 - `moveit_ros_move_group`
 - `moveit_ros_planning_interface`
@@ -116,8 +132,6 @@ ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
 - `moveit_ros_perception`
 - `moveit_ros_occupancy_map_monitor`
 - `moveit_ros_robot_interaction`
-- `ur_robot_driver`
-- `cv_bridge`
 
 ### Python-biblioteker (installeres via pip)
 - `opencv-python`
