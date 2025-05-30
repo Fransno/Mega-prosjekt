@@ -123,24 +123,11 @@ ros2 topic pub -1 /movement_state std_msgs/msg/Int32 "{data: 2}"
 - `shape_msgs`
 - `cv_bridge`
 - `ur_robot_driver`
-
-#### MoveIt-komponenter
 - `moveit_msgs`
-- `moveit_ros_move_group`
-- `moveit_ros_planning_interface`
-- `moveit_ros_planning`
-- `moveit_ros_perception`
-- `moveit_ros_occupancy_map_monitor`
-- `moveit_ros_robot_interaction`
 
 ### Python-biblioteker (installeres via pip)
 - `opencv-python`
 - `numpy`
-
-### Standardbiblioteker (følger med Python)
-- `threading`
-- `collections`
-
 
 ## Lisens
 
