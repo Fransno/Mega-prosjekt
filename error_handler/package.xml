@@ -1,24 +1,29 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>error_handler</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <name>error_handler</name> <!-- Navnet på ROS2-pakken -->
+  <version>0.0.0</version> <!-- Versjon (oppdater ved større endringer) -->
+  <description>TODO: Package description</description> <!-- Kort beskrivelse -->
+
+  <!-- Vedlikeholderinfo -->
   <maintainer email="TeemoTeemo123@outlook.com">frans</maintainer>
-  <license>Apache-2.0</license>
+  <license>Apache-2.0</license> <!-- Brukt lisens -->
 
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>json</exec_depend>
-  <exec_depend>collections</exec_depend>
-  
+  <!-- Kjøringstid-avhengigheter -->
+  <exec_depend>rclpy</exec_depend> <!-- ROS2 Python-bibliotek -->
+  <exec_depend>std_msgs</exec_depend> <!-- Standard ROS2 meldinger -->
+  <exec_depend>json</exec_depend> <!-- Standard Python-modul -->
+  <exec_depend>collections</exec_depend> <!-- Standard Python-modul -->
 
+  <!-- Testavhengigheter -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
 
+  <!-- Angir at dette er en Python-basert ROS2-pakke -->
   <export>
     <build_type>ament_python</build_type>
   </export>
 </package>
+
